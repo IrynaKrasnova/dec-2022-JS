@@ -44,8 +44,21 @@
 //     Потрібно знайти та вивести максимальне число з тих двох .
 //     Також потрібно врахувати коли введені рівні числа.
 
-let number = +prompt('enter you number');
+// let number1 = +prompt('enter you number 1');
+// let number2 = +prompt('enter you number 2');
+// if (number1 > number2){
+//     document.write(number1);
+// } else if (number1<number2){
+//     document.write(number2);
+// }else if (number1===number2){
+//     document.write('equal');
+// } else {
+//     document.write('error')
+// }
 
+// - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
+//     за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 
-
-
+// let x = undefined;
+// x = x || 'default';
+// console.log(x);
