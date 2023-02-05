@@ -31,7 +31,7 @@ let books={
 console.log(books);
 
 
-// - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+
 
 
 
