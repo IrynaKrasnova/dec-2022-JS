@@ -55,3 +55,18 @@ let users = [
     {name: 'nick', age: 37, modules: ['html', 'css', 'js', 'java advanced']},
 ];
 
+let i = 0;
+
+do {
+    document.write(`<h1>${users[i].name} - ${users[i].age}</h1>`);
+    document.write('<ul>');
+    for (const module of users[i].modules) {
+        document.write(`<li>${module}</li>`)
+        
+    }
+        document.write(`</ul>`);
+
+i++;
+}
+while (i<users.length)
+
