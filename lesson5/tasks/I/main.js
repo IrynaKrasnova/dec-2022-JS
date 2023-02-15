@@ -18,9 +18,21 @@
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
-let usersList= [
-    {name: 'Leanne Graham', username: 'Bret'},
-    {name: 'Clementine Bauch', username: 'Samantha'},
-    {name: 'Patricia Lebsack', username: 'Karianne'},
-    {name: 'Chelsey Dietrich', username:'Maxime'},
-];
+// let usersList= [
+//     {name: 'Leanne Graham', username: 'Bret'},
+//     {name: 'Clementine Bauch', username: 'Samantha'},
+//     {name: 'Patricia Lebsack', username: 'Karianne'},
+//     {name: 'Chelsey Dietrich', username:'Maxime'},
+// ];
+// let array = usersList.filter((item)=>{
+//     return item.name, item.username;
+// });
+// console.log(array)
+
+
+// - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+
+// let paragraph = (words) => `${words}`;
+// console.log(paragraph(`hello`));
+
+
