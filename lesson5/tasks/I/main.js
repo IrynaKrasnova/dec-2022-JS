@@ -96,7 +96,7 @@
 
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-
+//
 // let container = (obj) =>{
 //
 //     for (let objElement of obj) {
@@ -105,8 +105,8 @@
 //     }
 //     return objElement;
 // }
-
-document.write(container([ {name:'Irina', id: 'one', age: 31}]))
+//
+// document.write(container([ {name:'Irina', id: 'one', age: 31}]))
 
 // - створити функцію яка повертає найменьше число з масиву
 
