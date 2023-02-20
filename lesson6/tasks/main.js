@@ -1,11 +1,13 @@
 // - Знайти та вивести довижину наступних стрінгових значень
 // 'hello world', 'lorem ipsum', 'javascript is cool'
 
-
-let s = 'hello world';
-let x = s.indexOf('hello world');
-console.log(x)
-
+//
+// let s = 'hello world';
+// console.log(s.length);
+// let s1 = 'lorem ipsum';
+// console.log(s1.length);
+// let s2 = 'javascript is cool';
+// console.log(s2.length);
 
 
 
