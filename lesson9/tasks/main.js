@@ -281,5 +281,29 @@
 // }
 
 
+// - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
+//
+// const body = document.querySelector('body');
+// const p = document.createElement(`p`);
+// const but = document.createElement(`button`);
+// p.innerText = 'something';
+// but.innerText = 'click me';
+// but.onclick = () =>{
+//     p.style.display = `none`;
+//
+// }
+// body.append(p,but);
+
+// - створити інпут який приймає вік людини та кнопку яка підтверджує дію.
+// При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+
+// const form = document.forms.checker;
+// form.onsubmit = function() {
+//   if (this.age.value < 18) {
+//     return alert('Go away');
+//   }
+//   alert('Welcome');
+// }
+
 
 
