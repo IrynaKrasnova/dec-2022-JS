@@ -19,12 +19,9 @@ fetch(url)
             name.classList.add('flex');
             button.classList.add('button');
 
-            // button.onclick = function (){
-            //
-            // }
-
-
-
+            button.onclick = function (){
+            document.location.href = 'user-details.html'
+            }
 
 
             // div.style.border = `5px solid darkred`;
