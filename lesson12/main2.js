@@ -1,7 +1,7 @@
 let url = new URL(location.href);
-let jsonUser = url.searchParams.get('data');
-let user = JSON.parse(jsonUser);
-console.log(jsonUser)
+let data = url.searchParams.get('data');
+console.log(data);
+
 
 
 
