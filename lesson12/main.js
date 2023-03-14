@@ -2,16 +2,16 @@
 let url = new URL('https://jsonplaceholder.typicode.com/users');
 fetch(url)
     .then(value => value.json())
-    .then(value => {
-        for (const valueElement of value) {
+    .then(users => {
+        for (const user of users) {
             let wrapper = document.createElement('div');
             let id = document.createElement('div');
             let name = document.createElement('div');
             let button = document.createElement('button')
 
 
-            id.innerText = `${valueElement.id}`;
-            name.innerText = `${valueElement.name}`;
+            id.innerText = `${user.id}`;
+            name.innerText = `${user.name}`;
             button.innerText ='details';
 
             wrapper.classList.add('wrapper', 'item');
@@ -20,7 +20,7 @@ fetch(url)
             button.classList.add('button');
 
             button.onclick = function (){
-            document.location.href = 'user-details.html'
+            document.location.href = 'user-details.html?data=' + JSON.stringify(user)
             }
 
 
