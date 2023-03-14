@@ -1,5 +1,5 @@
 .wrapper{
-    width: 300px;
+    width: 400px;
     padding: 10px;
 }
 .item{
@@ -9,4 +9,8 @@
 }
 .flex{
     display: flex;
+}
+.a{
+    padding: 1px;
+    border: darkred 2px solid;
 }

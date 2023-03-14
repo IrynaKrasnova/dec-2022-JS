@@ -8,26 +8,26 @@ fetch(url)
             let wrapper = document.createElement('div');
             let id = document.createElement('div');
             let name = document.createElement('div');
-            let a = document.createElement('a')
+            let button = document.createElement('button')
 
 
             id.innerText = `${user.id}`;
             name.innerText = `${user.name}`;
-            a.innerText ='details';
-            a.href = 'post.html?data=' + JSON.stringify(user);
+            // a.innerText ='details';
+            // a.href = 'post.html?data=' + JSON.stringify(user);
 
 
             wrapper.classList.add('wrapper', 'item');
             id.classList.add('flex');
             name.classList.add('flex');
-            // button.classList.add('button');
+            button.classList.add('button');
 
 
-            // button.onclick = function (){
-            //     location.href = 'user-details.html?data=' + JSON.stringify(user)
-            // }
+            button.onclick = function (){
+                location.href = 'user-details.html?data=' + JSON.stringify(user)
+            }
 
-            wrapper.append(id,name,a);
+            wrapper.append(id,name,button);
             document.body.appendChild(wrapper);
 
         }
