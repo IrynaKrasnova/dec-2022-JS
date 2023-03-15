@@ -1,20 +1,34 @@
 let url = new URL(location.href);
 let json = url.searchParams.get('data');
-// console.log(data);
 let users = JSON.parse(json);
-// console.log(users);
+
+
+// for (const usersKey in users) {
+//     console.log(users['address']);
+// }
 
 
 let block = document.createElement('div');
 let id = document.createElement('h2');
 let name = document.createElement('div');
+let username = document.createElement('div');
+let email = document.createElement('div');
 
-id.innerText =`${users.id}`;
-name.innerText = `${users.name}`;
+let address = document.createElement('div');
 
 
-block.append(id,name);
+id.innerText =` ID: ${users.id}`;
+name.innerText = `Name: ${users.name}`;
+username.innerText = `Username: ${users.username}`;
+email.innerText = `e-mail: ${users.email}`;
+address.innerText = `Address: ${users.address}`;
+
+
+
+block.append(id,name,username,email,address);
 document.body.appendChild(block);
+
+
 
 
 
@@ -147,4 +161,22 @@ document.body.appendChild(block);
 // }
 
 
+// const ul = document.createElement('ul');
 
+// let addr = users.address;
+
+// for (const addrElement of users.address) {
+//     const li = document.createElement(`li`);
+//     li.innerText=addrElement;
+//     ul.appendChild(li);
+// }
+
+
+
+// const ul = document.createElement('ul');
+// let address = document.createElement('div');
+
+// for (const details of users.address) {
+//     const li = document.createElement(`li`);
+//     li.innerText = details;
+//     ul.appendChild(li);
