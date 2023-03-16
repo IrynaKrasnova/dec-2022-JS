@@ -13,19 +13,38 @@ let id = document.createElement('h2');
 let name = document.createElement('div');
 let username = document.createElement('div');
 let email = document.createElement('div');
-
 let address = document.createElement('div');
+let phone = document.createElement('div');
+let website = document.createElement('div')
+// const ul = document.createElement('ul');
+
 
 
 id.innerText =` ID: ${users.id}`;
 name.innerText = `Name: ${users.name}`;
 username.innerText = `Username: ${users.username}`;
 email.innerText = `e-mail: ${users.email}`;
-address.innerText = `Address: ${users.address}`;
+address.innerText = `Address: ${JSON.stringify(users.address)}`;
+phone.innerText = `Phone: ${users.phone}`
+website.innerText = `Website:${users.website}`;
 
 
 
-block.append(id,name,username,email,address);
+// for (const address in users) {
+// const li = document.createElement(`li`);
+//         li.innerText = JSON.stringify(users['address']);
+//         ul.appendChild(li);
+//     }
+
+// for (const userKey in users) {
+//     let adr = users[userKey];
+//     adr.innerText = `${users['address']}`
+// }
+
+
+
+
+block.append(id,name,username,email,address,phone,website);
 document.body.appendChild(block);
 
 
