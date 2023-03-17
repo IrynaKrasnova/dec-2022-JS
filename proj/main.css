@@ -1,0 +1,16 @@
+.wrapper{
+    width: 400px;
+    padding: 10px;
+}
+.item{
+    margin: 10px;
+    border: blueviolet 2px solid;
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.a{
+    padding: 1px;
+    border: darkred 2px solid;
+}
