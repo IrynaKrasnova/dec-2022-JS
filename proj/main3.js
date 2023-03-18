@@ -14,5 +14,18 @@ userId.innerText = `UserId: ${posts.userId}`;
 Id.innerText = `Id: ${posts.id}`
 body.innerText = `Body: ${posts.body}`;
 
+block2.classList.add('page3')
+title.classList.add('page3item')
+userId.classList.add('page3item')
+Id.classList.add('page3item')
+body.classList.add('page3item')
+
+
+
+
 block2.append(title,userId,Id,body);
 document.body.appendChild(block2);
+
+
+
+

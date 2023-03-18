@@ -15,6 +15,10 @@ let phone = document.createElement('div');
 let website = document.createElement('div');
 let company = document.createElement('div');
 
+block.classList.add('page2')
+
+
+
 
 id.innerText =` ID: ${users.id}`;
 name.innerText = `Name: ${users.name}`;
@@ -48,11 +52,12 @@ fetch(url2)
 
             postOfCurrentUser.addEventListener('click', ()=>{
 
-                // location.href = 'post-details.html?id=' + JSON.stringify(post)
-                location.href=`post-details.html?id=${post.id}` + JSON.stringify(post)
+                location.href = 'post-details.html?id=' + JSON.stringify(post)
+                // location.href=`post-details.html?id=${post.id}` + JSON.stringify(post)
 
                 })
 
+            postOfCurrentUser.classList.add('but2')
             block.appendChild(postOfCurrentUser)
 
         }
