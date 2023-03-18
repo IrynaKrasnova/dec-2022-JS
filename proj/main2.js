@@ -31,14 +31,18 @@ block.append(id, name, username, email, address, phone, website, company);
 document.body.appendChild(block);
 
 let url2 = new URL('https://jsonplaceholder.typicode.com/posts');
+
 fetch(url2)
     .then(value => value.json())
     .then(posts => {
         for (const post of posts) {
 
+
+
+
             let a = document.createElement('a');
             a.innerText = `${post.title}`;
-            a.href = 'post-details.html?data=' + JSON.stringify(post);
+            a.href = 'post-details.html?id=' + JSON.stringify(post);
             a.style.display = 'block'
 
 
@@ -50,3 +54,5 @@ fetch(url2)
         }
 
     })
+
+

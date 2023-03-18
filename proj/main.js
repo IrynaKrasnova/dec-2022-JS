@@ -4,23 +4,26 @@ fetch(url)
     .then(users => {
         for (const user of users) {
             let wrapper = document.createElement('div');
-            let id = document.createElement('div');
-            let name = document.createElement('div');
+            let client = document.createElement('div');
+            client.innerText = `${user.id} - ${user.name}`;
 
-            id.innerText = `${user.id}`;
-            name.innerText = `${user.name}`;
-
+            wrapper.classList.add('wrapper');
+            client.classList.add('item');
 
             let details = document.createElement('button');
             details.textContent = 'details';
-
+            details.classList.add('but');
 
             details.addEventListener('click',()=>{
+
                 location.href = 'user-details.html?data='+JSON.stringify(user)
+                // location.href = `user-details.html?id=${user.id}`+JSON.stringify(user)
+
             })
 
-            id.appendChild(details);
-            wrapper.append(id,name);
+
+            client.appendChild(details);
+            wrapper.append(client);
             document.body.appendChild(wrapper);
         }
     })
