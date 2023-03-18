@@ -6,7 +6,7 @@ let users = JSON.parse(json);
 
 
 let block = document.createElement('div');
-let id = document.createElement('h4');
+let id = document.createElement('div');
 let name = document.createElement('div');
 let username = document.createElement('div');
 let email = document.createElement('div');
