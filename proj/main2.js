@@ -30,8 +30,6 @@ website.innerText = `Website:${users.website}`;
 company.innerText = `Company: ${JSON.stringify(users.company)}`;
 
 
-
-
 block.append(id, name, username, email, address, phone, website, company);
 document.body.appendChild(block);
 
